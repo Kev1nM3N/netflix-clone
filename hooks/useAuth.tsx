@@ -10,8 +10,6 @@ import {
   import { createContext, useContext, useEffect, useMemo, useState } from 'react'
   import { auth } from '../firebase'
 
-  //1:01:16
-
 interface IAuth {
     user: User | null
     signUp: (email: string, password: string) => Promise<void>
