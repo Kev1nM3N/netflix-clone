@@ -6,9 +6,6 @@ import { InformationCircleIcon, PlayIcon } from "@heroicons/react/24/solid";
 import { useRecoilState } from "recoil";
 import { modalState, movieState } from "../atoms/modalAtom";
 
-//laparapluie@comodormail.com
-//1080pg
-
 
 interface Props {
   netflixOriginals: Movie[]

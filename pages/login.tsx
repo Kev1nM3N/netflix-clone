@@ -5,12 +5,15 @@ import { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import useAuth from "../hooks/useAuth";
 
+//laparapluie@comodormail.com
+//1080pg
+
 interface Inputs {
   email: string
   password: string
 }
 
-function login() {
+function Login2() {
   const [login, setLogIn] = useState(false)
   const { signIn, signUp } = useAuth()
   
@@ -40,11 +43,12 @@ function login() {
         alt="picture"
       />
 
-        <img
-            src="https://rb.gy/ulxxee"
+        <Image
+            src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
             className="absolute left-4 top-4 cursor-pointer object-contain md:left-10 md:top-6"
-            width={150}
-            height={150}
+            width={100}
+            height={100}
+            alt="picture2"
         />
 
         <form 
@@ -76,4 +80,4 @@ function login() {
   );
 }
 
-export default login;
+export default Login2;
