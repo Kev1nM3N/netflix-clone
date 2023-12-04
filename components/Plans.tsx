@@ -3,10 +3,13 @@ import Image from "next/image";
 import Link from 'next/link';
 import useAuth from '../hooks/useAuth';
 import { CheckIcon } from '@heroicons/react/24/solid';
+import { Product } from '@stripe/firestore-stripe-payments';
 
-//43:44
+interface Props {
+  products: Product[]
+}
 
-function Plans() {
+function Plans({ products }: Props) {
     const {logout} = useAuth()
 
   return (
